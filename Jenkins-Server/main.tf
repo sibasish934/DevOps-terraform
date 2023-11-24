@@ -42,14 +42,14 @@ module "Jenkins_service_sg" {
       to_port     = 8080
       protocol    = "tcp"
       description = "HTTP"
-      cidr_blocks = "150.107.26.5/32"
+      cidr_blocks = "0.0.0.0/0"
     },
     {
       from_port   = 22
       to_port     = 22
       protocol    = "tcp"
       description = "SSH"
-      cidr_blocks = "150.107.26.5/32"
+      cidr_blocks = "0.0.0.0/0"
     }
   ]
 
